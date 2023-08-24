@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:wght@300&family=Ubuntu+Mono&display=swap');
 
-/* Font Responsive  
-font-size: 
-calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
- */
+:root{
+    --dark-green:#455A64;
+    --vibe-green:#27DEBF;
+    --secondary:#869196;
+    --white: white;
+}
 * {
     box-sizing: border-box;
 }
@@ -17,11 +19,13 @@ body {
     font-weight: 400;
     font-size: calc(12px + (16 - 12) * ((100vw - 320) / (1440 - 320)));
 }
+.header{
+    height: 5%;
+}
 
 .title-corner {
     padding: 1rem;
     font-weight: 700;
-    height: 5%;
 }
 
 .container {
@@ -48,8 +52,8 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
     font-size: 2.8rem;
-    color: #455A64;
-    text-shadow: 3px 3px #27DEBF;
+    color: var(--dark-green);
+    text-shadow: 3px 3px var(--vibe-green);
     margin-bottom: 3rem;
 }
 
@@ -61,7 +65,7 @@ body {
 
 .btn-info {
     padding: 1.3rem 1rem;
-    background-color: #455A64;
+    background-color: var(--dark-green);
     color: white;
     font-weight: 600;
     border: none;
@@ -71,8 +75,8 @@ body {
 
 .btn-info:hover {
     cursor: pointer;
-    background-color: #27DEBF;
-    color: #869196;
+    background-color: var(--vibe-green);
+    color: white;
 }
 .footer{
     height: 5%;
@@ -83,9 +87,9 @@ body {
     font-size: .9rem;
 }
 .footer-created-by{
-    color: #455A64;
+    color: var(--dark-green);
 }
-.link-thak a{
+a{
     color: #27DEBF;
 }
 

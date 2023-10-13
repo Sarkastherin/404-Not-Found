@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:wght@300&family=Ubuntu+Mono&display=swap');
+
+:root{
+    --dark-green:#455A64;
+    --vibe-green:#27DEBF;
+    --secondary:#869196;
+    --white: white;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1440 - 320)));
+}
+.header{
+    height: 5%;
+}
+
+.title-corner {
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1000px;
+    height: 90%;
+    justify-content: center;
+    margin: auto;
+}
+
+.container-img {
+    padding-left: 2rem;
+    width: 55%;
+}
+
+.box-info {
+    width: 45%;
+    padding: 0 2rem;
+}
+
+.title-info {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: var(--dark-green);
+    text-shadow: 3px 3px var(--vibe-green);
+    margin-bottom: 3rem;
+}
+
+.content-info {
+    font-size: 1.5em;
+    line-height: 2.5rem;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.btn-info {
+    padding: 1.3rem 1rem;
+    background-color: var(--dark-green);
+    color: white;
+    font-weight: 600;
+    border: none;
+    font-size: 0.8rem;
+    margin: 2rem 0;
+}
+
+.btn-info:hover {
+    cursor: pointer;
+    background-color: var(--vibe-green);
+    color: white;
+}
+.footer{
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    font-size: .9rem;
+}
+.footer-created-by{
+    color: var(--dark-green);
+}
+a{
+    color: #27DEBF;
+}
+
+@media (max-width:767px) {
+    body{
+        height: auto;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .container-img{
+        max-width: 400px;
+        width: 100%;
+        padding: 0;
+    }
+    .box-info {
+        width: 100%;
+        padding: 20px;
+    }
+    .btn-info {
+        margin: 1rem 0
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+}

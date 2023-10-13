@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  },
+  "name": "404-not-found",
+  "description": "This repository offers you a charming solution to handle those pesky 404 errors. Why settle for a simple error message when you can enjoy the company of an adorable kitten? Because no one likes 404, but we all love kittens! This touch of charm adds a bit of joy to a frustrating situation. We hope this page makes those 404 errors a little more bearable for your visitors!",
+  "version": "1.0.0",
+  "main": "index.js",
+  
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarkastherin/404-Not-Found.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sarkastherin/404-Not-Found/issues"
+  },
+  "homepage": "https://github.com/Sarkastherin/404-Not-Found#readme"
+}
